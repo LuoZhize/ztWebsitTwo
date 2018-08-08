@@ -15,8 +15,8 @@ li {
 /*首页*/
 .ztHp {
     background: url("../img/ztHpBj.png") no-repeat;
-    background-size: 100%;
-    padding: 1.3334rem 4.33334rem 4rem;
+    background-size: 100% 100%;
+    padding: 1.3334rem 4.33334rem 3rem;
 }
 
 .ztNav {
@@ -55,5 +55,5 @@ li {
 .ztHp_animate {
     font-size: 0.733334rem;
     color: #ffffff;
-    margin-top: 22rem;
+    padding-top: 24.1rem;
 }
