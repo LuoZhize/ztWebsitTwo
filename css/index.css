@@ -16,6 +16,7 @@ li {
 .ztHp {
     background: url("../img/ztHpBj.png") no-repeat;
     background-size: 100%;
+    padding: 1.3334rem 4.33334rem 4rem;
 }
 
 .ztNav {
@@ -25,7 +26,7 @@ li {
 .ztLogo {
     width: 5.78964rem;
     height: 2.267rem;
-    margin-left: 4.2667rem;
+    display: inline-block;
 }
 
 .ztLogo img {
@@ -33,12 +34,26 @@ li {
 }
 
 .ztNavList {
+    display: inline-block;
+    margin-top: 1.3333rem;
 }
 
 .ztNavList > li {
     display: inline-block;
+    margin-left: 0.66667rem;
+}
+
+.ztNavList > li:nth-of-type(1) {
+    margin-left: 0;
 }
 
 .ztNavList > li > a {
     color: #ffffff;
+    font-size: 0.733334rem;
+}
+
+.ztHp_animate {
+    font-size: 0.733334rem;
+    color: #ffffff;
+    margin-top: 22rem;
 }
