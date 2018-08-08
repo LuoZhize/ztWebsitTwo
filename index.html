@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + ',user-scalable=no" />');
+        var html = document.getElementsByTagName('html')[0];
+        getRem();
+        window.addEventListener('resize', getRem, false);
+
+        function getRem() {
+            var pageWidth = html.getBoundingClientRect().width;
+            html.style.fontSize = pageWidth / 100 + 'px';
+        }
+    </script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+
+    </style>
+</head>
+<body>
+
+</body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</html>
