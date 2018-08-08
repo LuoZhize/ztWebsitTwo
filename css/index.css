@@ -1,0 +1,44 @@
+/*公共*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style: none
+}
+/*首页*/
+.ztHp {
+    background: url("../img/ztHpBj.png") no-repeat;
+    background-size: 100%;
+}
+
+.ztNav {
+    overflow: hidden;
+}
+
+.ztLogo {
+    width: 5.78964rem;
+    height: 2.267rem;
+    margin-left: 4.2667rem;
+}
+
+.ztLogo img {
+    width: 100%;
+}
+
+.ztNavList {
+}
+
+.ztNavList > li {
+    display: inline-block;
+}
+
+.ztNavList > li > a {
+    color: #ffffff;
+}

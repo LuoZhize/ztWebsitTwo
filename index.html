@@ -10,21 +10,52 @@
         var html = document.getElementsByTagName('html')[0];
         getRem();
         window.addEventListener('resize', getRem, false);
-
         function getRem() {
             var pageWidth = html.getBoundingClientRect().width;
-            html.style.fontSize = pageWidth / 100 + 'px';
+            html.style.fontSize = pageWidth / 64 + 'px';
         }
     </script>
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
-    <style>
-
-    </style>
 </head>
 <body>
+    <!--首页头部-->
+    <header>
+        <div class="ztHp">
+            <!--导航-->
+            <nav class="ztNav">
+                <div class="ztLogo"><img src="img/ztLogo.png" alt="" /></div>
+                <ul class="ztNavList pull-right">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">服务项目</a></li>
+                    <li><a href="#">项目案例</a></li>
+                    <li><a href="#">新闻公告</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </nav>
+            <div>
 
+            </div>
+        </div>
+    </header>
+    <!--分页及内容-->
+    <div class="container">
+        <!--服务项目-->
+        <div class="ztFWPro"></div>
+        <!--项目案例-->
+        <div class="ztProAL"></div>
+        <!--新闻公告-->
+        <div class="ztNewGG"></div>
+        <!--联系我们-->
+        <div class="ztWmWay"></div>
+    </div>
+    <!--脚部-->
+    <footer>
+
+    </footer>
 </body>
+<script type="text/javascript" src="js/wow.min.js"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
