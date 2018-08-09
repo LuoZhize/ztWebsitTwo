@@ -12,15 +12,25 @@ a {
 li {
     list-style: none
 }
+body {
+    transition-duration: 0.3s;
+    font-family: "微软雅黑";
+}
 /*首页*/
 .ztHp {
     background: url("../img/ztHpBj.png") no-repeat;
-    background-size: 100%;
-    padding: 1.3334rem 4.33334rem 4rem;
+    background-size: 100% 100%;
+    position: relative;
 }
 
 .ztNav {
+    width: 100%;
+    padding: 1.3334rem 4.33334rem 1.33334rem;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    background: #16233D;
+    z-index: 9999;
 }
 
 .ztLogo {
@@ -35,7 +45,7 @@ li {
 
 .ztNavList {
     display: inline-block;
-    margin-top: 1.3333rem;
+    margin: 1.3333rem 0 0 0rem;
 }
 
 .ztNavList > li {
@@ -55,5 +65,38 @@ li {
 .ztHp_animate {
     font-size: 0.733334rem;
     color: #ffffff;
-    margin-top: 22rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 4.33334rem;
 }
+.ztHp_animate p {
+    width: 21.11rem;
+    line-height: 1rem;
+    letter-spacing: 0.2rem;
+}
+/*服务项目*/
+.container {min-width: 100%;padding: 0;}
+.ztFWPro {}
+.ztFWPro_head,.zt_proAL_head,.zt_newGG_head,.zt_wmWay_head {text-align: center;padding: 2rem 0;margin-top: 5rem;}
+.zt_title {font-size: 1.6rem;color: #000000;letter-spacing: 0.66667rem;}
+.zt_title_En {font-size: 0.4rem;color: #AAAAAA;margin-right: 0.8rem;}
+.list-group {width: 100%;}
+.list-group-item {border: 0 solid transparent;padding: 0;overflow: hidden;}
+.zt_fw_info_list>a {width: 38.233334rem;height: 12.866667rem;overflow: hidden;float: left;position: relative;}
+.zt_fw_info_list>a img {width: 100%;vertical-align: center;position: relative;top: -5.8666667rem;}
+.zt_fw_info_list:nth-of-type(2n)>a {float: right;}
+.zt_fw_info {margin: 4rem 0 0 1.8rem;clear: both;display: inline-block;color: #000000;}
+.zt_fw_info_num {font-size: 2rem;}
+.zt_fw_info_title {font-size: 1.2rem;}
+.zt_fw_info_list:nth-of-type(2n)>.zt_fw_info {margin-left: 15.932667rem;}
+/*项目案例*/
+.ztProAL {}
+.grid-item {height: 120px;
+    float: left;
+    background: #D26;
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;}
+.grid-item--width2 { width: 400px;}
+/*新闻公告*/
+/*联系我们*/
