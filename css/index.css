@@ -95,8 +95,12 @@ body {
     float: left;
     background: #D26;
     border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.5);
     border-radius: 5px;}
 .grid-item--width2 { width: 400px;}
 /*新闻公告*/
+.ztNewGG {padding: 0 12.033334rem;}
+.new-list>div {display: inline-block;margin-right: 0.66667rem;}
+.thumbnail {border: 0 solid transparent;margin-bottom: 0.666667rem;padding: 0;}
+.thumbnail>img {min-width: 12.866667rem;height: 8.166667rem;margin: 0;}
+.thumbnail .caption {padding: 0 0 1.66667rem 1.333334rem;}
 /*联系我们*/
