@@ -15,6 +15,9 @@ li {
 
 body {
     transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
     font-family: "微软雅黑";
 }
 
@@ -35,9 +38,12 @@ a:hover {
     overflow: hidden;
     position: fixed;
     top: 0;
-    background: #16233D;
+    background: transparent;
     z-index: 9999;
     transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
 }
 
 .ztLogo {
@@ -85,6 +91,8 @@ a:hover {
 
 /*服务项目*/
 .container {
+    position: relative;
+    display: none;
     min-width: 100%;
     padding: 0;
 }
@@ -159,82 +167,6 @@ a:hover {
     margin-left: 15.932667rem;
 }
 
-.zt_fw_info-animate-l {
-    animation: itemAnimateL 2s ease-in-out 1;
-}
-
-.zt_fw_info-animate-r {
-    animation: itemAnimateR 2s ease-in-out 1;
-}
-
-.zt-fw-item-a-animate-l {
-    animation: itemInfoAnimateL 1s ease-in-out 1;
-}
-
-.zt-fw-item-a-animate-r {
-    animation: itemInfoAnimateR 1s ease-in-out 1;
-}
-
-@keyframes itemAnimateL {
-    0% {
-        left: 20rem;
-    }
-    20% {
-        left: 0rem;
-    }
-    40% {
-        left: 4rem;
-    }
-    60% {
-        left: 1rem
-    }
-    80% {
-        left: 2rem;
-    }
-    100% {
-        left: 0rem;
-    }
-}
-
-@keyframes itemAnimateR {
-    0% {
-        right: 20rem;
-    }
-    20% {
-        right: 0rem;
-    }
-    40% {
-        right: 4rem;
-    }
-    60% {
-        right: 1rem
-    }
-    80% {
-        right: 2rem;
-    }
-    100% {
-        right: 0rem;
-    }
-}
-
-@keyframes itemInfoAnimateL {
-    0% {
-        left: 20rem;
-    }
-    100% {
-        left: 0rem;
-    }
-}
-
-@keyframes itemInfoAnimateR {
-    0% {
-        right: 20rem;
-    }
-    100% {
-        right: 0rem;
-    }
-}
-
 /*项目案例*/
 .ztProAL {
     background: #16233D;
@@ -285,6 +217,10 @@ a:hover {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 .isotope > div:nth-of-type(3n) {
@@ -308,7 +244,6 @@ a:hover {
 }
 
 .zt-new-loader {
-    margin: 0 0 2rem;
     height: 3rem;
     width: 3rem;
     text-align: center;
@@ -327,12 +262,19 @@ a:hover {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 }
 
 .load-more:hover {
     background: #ffffff;
     color: #000000;
     transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
 }
 
 /*新闻公告*/
@@ -353,6 +295,9 @@ a:hover {
 
 .new-list-item:hover {
     box-shadow: 0.23333rem 0.23333rem 0.6rem #ADADAD;
+    -moz-box-shadow: 0.23333rem 0.23333rem 0.6rem #ADADAD;
+    -webkit-box-shadow: 0.23333rem 0.23333rem 0.6rem #ADADAD;
+    -o-box-shadow: 0.23333rem 0.23333rem 0.6rem #ADADAD;
 }
 
 .new-list > div:last-child {
@@ -485,11 +430,13 @@ a:hover {
 }
 
 .up-top {
+    display: none;
     width: 2.06667rem;
     height: 2.06667rem;
-    position: absolute;
-    right: 0;
-    top: 10%;
+    position: fixed;
+    right: 2%;
+    bottom: 7%;
+    cursor: pointer;
 }
 
 .up-top img {
