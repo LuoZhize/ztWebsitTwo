@@ -27,6 +27,7 @@ a:hover {
     background: url("../img/ztHpBj.png") no-repeat;
     background-size: 100% 100%;
     position: relative;
+    padding: 1.3334rem 4.33334rem 3rem;
 }
 
 .ztNav {
@@ -525,4 +526,5 @@ a:hover {
 
 #map-p > img {
     width: 100%;
+    padding-top: 24.1rem;
 }
