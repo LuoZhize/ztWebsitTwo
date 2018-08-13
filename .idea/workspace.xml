@@ -1,46 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1cdfb7e6-bd78-4718-a55b-b0b9d5f98501" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/img/bottomLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/fw-img-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/fw-img-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/fw-img-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/fw-img-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/fw-img-6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/mapBiaoZhu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/mapPosition.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/newListImg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pro1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pro2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pro3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pro4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pro5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pro6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pro7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pro8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/pro9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/upImg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/way-arress-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/way-arress.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/way-time-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/way-time.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/way-wx-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/way-wx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/wayImg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fwPro.html" beforeDir="false" afterPath="$PROJECT_DIR$/fwPro.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/masonry.pkgd.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/ztFWPro.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ztFWPro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/ztProAL.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ztProAL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/ztWmWay.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ztWmWay.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/newGg.html" beforeDir="false" afterPath="$PROJECT_DIR$/newGg.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proAl.html" beforeDir="false" afterPath="$PROJECT_DIR$/proAl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wmWay.html" beforeDir="false" afterPath="$PROJECT_DIR$/wmWay.html" afterDir="false" />
-    </list>
+    <list default="true" id="1cdfb7e6-bd78-4718-a55b-b0b9d5f98501" name="默认更改列表" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -105,20 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wmWay.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="506">
+              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -212,7 +164,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/js/ztFWPro.js" />
+    <property name="last_opened_file_path" value="F:/ztWebsitTwo1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -261,12 +213,12 @@
       <workItem from="1533911021126" duration="3385000" />
       <workItem from="1533952914673" duration="15627000" />
       <workItem from="1533986853221" duration="1509000" />
-      <workItem from="1534126713109" duration="12363000" />
+      <workItem from="1534126713109" duration="12653000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96576000" />
+    <option name="totallyTimeSpent" value="96866000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -279,9 +231,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14699684" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14699684" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="调试" />
@@ -293,8 +244,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32921174" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32921174" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -450,17 +401,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wmWay.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
         </state>
       </provider>
     </entry>
