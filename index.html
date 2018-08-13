@@ -43,13 +43,237 @@
 <!--分页及内容-->
 <div class="container">
     <!--服务项目-->
-    <div id="zt-fw-pro" class="ztFWPro"></div>
+    <div id="zt-fw-pro" class="ztFWPro">
+        <div class="ztFWPro_head">
+            <p class="zt_title">服务项目</p>
+            <p class="zt_title_En">CRAS PULVINAR ULTRICIES LIGULA SED PHARETRA</p>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item zt_fw_info_list"><a class="wow bounceInLeft" data-wow-duration="1s"><img
+                    src="img/fw-img-1.png"/></a>
+                <div class="zt_fw_info wow swing" data-wow-duration="1s"><p class="zt_fw_info_num">01</p>
+                    <p class="zt_fw_info_title">信息系统建设</p>
+                </div>
+            </li>
+            <li class="list-group-item zt_fw_info_list"><a class="wow bounceInRight" data-wow-duration="1s"><img
+                    src="img/fw-img-2.png"/></a>
+                <div class="zt_fw_info wow bounceInLeft" data-wow-duration="1s">
+                    <p class="zt_fw_info_num">02</p>
+                    <p class="zt_fw_info_title">交互设计</p>
+                </div>
+            </li>
+            <li class="list-group-item zt_fw_info_list"><a class="wow zoomInLeft" data-wow-duration="1s"><img
+                    src="img/fw-img-3.png"/></a>
+                <div class="zt_fw_info wow rotateInDownLeft" data-wow-duration="1s">
+                    <p class="zt_fw_info_num">03</p>
+                    <p class="zt_fw_info_title">视觉创意设计</p>
+                </div>
+            </li>
+            <li class="list-group-item zt_fw_info_list"><a class="wow zoomInRight" data-wow-duration="1s"><img
+                    src="img/fw-img-4.png"/></a>
+                <div class="zt_fw_info wow rotateInDownRight" data-wow-duration="1s">
+                    <p class="zt_fw_info_num">04</p>
+                    <p class="zt_fw_info_title">微信小程序</p>
+                </div>
+            </li>
+            <li class="list-group-item zt_fw_info_list"><a class="wow rollIn" data-wow-duration="1s"><img
+                    src="img/fw-img-5.png"/></a>
+                <div class="zt_fw_info wow bounceInRight" data-wow-duration="1s">
+                    <p class="zt_fw_info_num">05</p>
+                    <p class="zt_fw_info_title">企业效率工具</p>
+                </div>
+            </li>
+            <li class="list-group-item zt_fw_info_list"><a class="wow zoomIn" data-wow-duration="1s"><img
+                    src="img/fw-img-6.png"/></a>
+                <div class="zt_fw_info wow bounceInLeft" data-wow-duration="1s">
+                    <p class="zt_fw_info_num">06</p>
+                    <p class="zt_fw_info_title">网页应用</p>
+                </div>
+            </li>
+        </ul>
+    </div>
     <!--项目案例-->
-    <div id="zt-pro-al" class="ztProAL"></div>
+    <div id="zt-pro-al" class="ztProAL">
+        <div class="zt_proAL_head">
+            <p class="zt_title">项目案例</p>
+            <p class="zt_title_En">Project cases</p>
+        </div>
+        <div class="pro_container">
+            <div id="filters" class="button-group">
+                <button class="button is-checked new-btn" data-filter="*">所有</button>
+                <button class="button" data-filter=".item-info">信息系统建设</button>
+                <button class="button" data-filter=".item-jh">交互设计</button>
+                <button class="button" data-filter=".item-sj">视觉创意设计</button>
+                <button class="button" data-filter=".item-wx">微信小程序</button>
+                <button class="button" data-filter=".item-qy">企业效率工具</button>
+                <button class="button" data-filter=".item-wy">网页应用</button>
+            </div>
+            <div class="isotope">
+                <div class="element-item item-info"><a><img src="img/pro1.png" alt=""></a></div>
+                <div class="element-item item-info"><a><img src="img/pro2.png" alt=""></a></div>
+                <div class="element-item item-jh"><a><img src="img/pro3.png" alt=""></a></div>
+                <div class="element-item item-jh"><a><img src="img/pro4.png" alt=""></a></div>
+                <div class="element-item item-sj"><a><img src="img/pro5.png" alt=""></a></div>
+                <div class="element-item item-sj"><a><img src="img/pro6.png" alt=""></a></div>
+                <div class="element-item item-wx"><a><img src="img/pro7.png" alt=""></a></div>
+                <div class="element-item item-wx"><a><img src="img/pro8.png" alt=""></a></div>
+                <div class="element-item item-qy"><a><img src="img/pro1.png" alt=""></a></div>
+                <div class="element-item item-qy"><a><img src="img/pro2.png" alt=""></a></div>
+                <div class="element-item item-wy"><a><img src="img/pro3.png" alt=""></a></div>
+            </div>
+            <!--加载动画-->
+            <div class="zt-new-loader">
+                <svg version="1.1" id="zt-new-loader" x="0px" y="0px" width="2rem" height="2rem" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+              <path fill="#fff" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+                    <animateTransform attributeType="xml"
+                      attributeName="transform"
+                      type="rotate"
+                      from="0 25 25"
+                      to="360 25 25"
+                      dur="0.6s"
+                      repeatCount="indefinite"/>
+                </path>
+          </svg>
+            </div>
+            <a class="load-more">加载更多</a>
+        </div>
+    </div>
     <!--新闻公告-->
-    <div id="zt-new-gg" class="ztNewGG"></div>
+    <div id="zt-new-gg" class="ztNewGG">
+        <div class="zt_newGG_head">
+            <p class="zt_title">新闻公告</p>
+            <p class="zt_title_En">News bulletin</p>
+        </div>
+        <div id="myCarousel" class="carousel slide">
+            <!--圆点-->
+            <!--<ol class="carousel-indicators">-->
+            <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+            <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+            <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+            <!--</ol>-->
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active new-list">
+                    <div class="new-list-item">
+                        <div class="thumbnail">
+                            <img src="img/newListImg.png"/>
+                            <div class="caption">
+                                <h3 class="new-item-title">缩略图标签</h3>
+                                <p class="new-item-time"><span class="new-item-year">2018</span>年<span
+                                        class="new-item-month">08</span>月<span class="new-item-day">08</span>日</p>
+                                <p class="new-item-content">是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长江东逝水，浪花淘尽英雄。</p>
+                                <p class="new-item-more"><a class="btn btn-primary" role="button">阅读更多</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-list-item">
+                        <div class="thumbnail">
+                            <img src="img/newListImg.png"/>
+                            <div class="caption">
+                                <h3 class="new-item-title">缩略图标签</h3>
+                                <p class="new-item-time"><span class="new-item-year">2018</span>年<span
+                                        class="new-item-month">08</span>月<span class="new-item-day">08</span>日</p>
+                                <p class="new-item-content">是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长江东逝水，浪花淘尽英雄。</p>
+                                <p class="new-item-more"><a class="btn btn-primary" role="button">阅读更多</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new-list-item">
+                        <div class="thumbnail">
+                            <img src="img/newListImg.png"/>
+                            <div class="caption">
+                                <h3 class="new-item-title">缩略图标签</h3>
+                                <p class="new-item-time"><span class="new-item-year">2018</span>年<span
+                                        class="new-item-month">08</span>月<span class="new-item-day">08</span>日</p>
+                                <p class="new-item-content">是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长江东逝水，浪花淘尽英雄。</p>
+                                <p class="new-item-more"><a class="btn btn-primary" role="button">阅读更多</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item new-list">
+                    <div class="new-list-item">
+                        <div class="thumbnail">
+                            <img src="img/newListImg.png"/>
+                            <div class="caption">
+                                <h3 class="new-item-title">缩略图标签</h3>
+                                <p class="new-item-time"><span class="new-item-year">2018</span>年<span
+                                        class="new-item-month">08</span>月<span class="new-item-day">08</span>日</p>
+                                <p class="new-item-content">是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长江东逝水，浪花淘尽英雄。</p>
+                                <p class="new-item-more"><a class="btn btn-primary" role="button">阅读更多</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item new-list">
+                    <div class="new-list-item">
+                        <div class="thumbnail">
+                            <img src="img/newListImg.png"/>
+                            <div class="caption">
+                                <h3 class="new-item-title">缩略图标签</h3>
+                                <p class="new-item-time"><span class="new-item-year">2018</span>年<span
+                                        class="new-item-month">08</span>月<span class="new-item-day">08</span>日</p>
+                                <p class="new-item-content">是非成败转头空，青山依旧在，惯看秋月春风。一壶浊酒喜相逢，古今多少事，滚滚长江东逝水，浪花淘尽英雄。</p>
+                                <p class="new-item-more"><a class="btn btn-primary" role="button">阅读更多</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--左右箭头-->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
     <!--联系我们-->
-    <div id="zt-wm-way" class="ztWmWay"></div>
+    <div id="zt-wm-way" class="ztWmWay">
+        <div class="zt_wmWay_head">
+            <p class="zt_title">联系我们</p>
+            <p class="zt_title_En">Contact Us</p>
+        </div>
+        <ul class="list-group lxwm-list">
+            <li class="list-group-item lxwm-list-item">
+                <div class="wmWay-info">
+                    <a><img src="img/wayImg.png"/></a>
+                    <p class="lxwm-item-title">电话</p>
+                    <p class="lxwm-item-tel">+010-18628368</p>
+                </div>
+            </li>
+            <li class="list-group-item lxwm-list-item">
+                <div class="wmWay-info">
+                    <a><img src="img/way-wx-img.png"/></a>
+                    <p class="lxwm-item-title">微信</p>
+                    <p class="lxwm-item-tel">+010-18628368</p>
+                </div>
+            </li>
+            <li class="list-group-item lxwm-list-item">
+                <div class="wmWay-info">
+                    <a><img src="img/way-arress-img.png"/></a>
+                    <p class="lxwm-item-title">地址</p>
+                    <p class="lxwm-item-tel">北京市朝阳区高碑店99号</p>
+                </div>
+            </li>
+            <li class="list-group-item lxwm-list-item">
+                <div class="wmWay-info">
+                    <a><img src="img/way-time-img.png"/></a>
+                    <p class="lxwm-item-title">工作时间</p>
+                    <p class="lxwm-item-tel">周一至周五9:00-18:00</p>
+                </div>
+            </li>
+        </ul>
+        <div class="way-map">
+            <!--绘制地图-->
+            <div id="map"></div>
+            <!--复位-->
+            <a id="map-p"><img src="img/mapPosition.png"></a>
+        </div>
+    </div>
 </div>
 <!--脚部-->
 <footer class="zt-footer">
@@ -61,8 +285,8 @@
 <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PbG5AHVNk2uw9BtVZ5sUvpo2dKAtqeIh"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
 <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </html>
