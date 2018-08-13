@@ -10,6 +10,7 @@
         var html = document.getElementsByTagName('html')[0];
         getRem();
         window.addEventListener('resize', getRem, false);
+
         function getRem() {
             var pageWidth = html.getBoundingClientRect().width;
             html.style.fontSize = pageWidth / 64 + 'px';
@@ -20,45 +21,48 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <!--首页头部-->
-    <header>
-        <div class="ztHp">
-            <!--导航-->
-            <nav class="ztNav">
-                <div class="ztLogo"><img src="img/ztLogo.png" alt="" /></div>
-                <ul class="ztNavList pull-right">
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">服务项目</a></li>
-                    <li><a href="#">项目案例</a></li>
-                    <li><a href="#">新闻公告</a></li>
-                    <li><a href="#">联系我们</a></li>
-                </ul>
-            </nav>
-            <div class="ztHp_animate">
-                <p>iphone X 拥有一块超高分辨率、边角圆润的super retina 显示屏，分辨率为 1125 X 2436,虽然他未设计人员。</p>
-            </div>
+<!--首页头部-->
+<header>
+    <div id="zt-hp" class="ztHp">
+        <!--导航-->
+        <nav class="ztNav">
+            <div class="ztLogo"><img src="img/ztLogo.png" alt=""/></div>
+            <ul class="ztNavList pull-right">
+                <li><a href="#zt-hp">首页</a></li>
+                <li><a href="#zt-fw-pro">服务项目</a></li>
+                <li><a href="#zt-pro-al">项目案例</a></li>
+                <li><a href="#zt-new-gg">新闻公告</a></li>
+                <li><a href="#zt-wm-way">联系我们</a></li>
+            </ul>
+        </nav>
+        <div class="ztHp_animate wow bounceInLeft">
+            <p>iphone X 拥有一块超高分辨率、边角圆润的super retina 显示屏，分辨率为 1125 X 2436,虽然他未设计人员。</p>
         </div>
-    </header>
-    <!--分页及内容-->
-    <div class="container">
-        <!--服务项目-->
-        <div class="ztFWPro"></div>
-        <!--项目案例-->
-        <div class="ztProAL"></div>
-        <!--新闻公告-->
-        <div class="ztNewGG"></div>
-        <!--联系我们-->
-        <div class="ztWmWay"></div>
     </div>
-    <!--脚部-->
-    <footer>
-
-    </footer>
+</header>
+<!--分页及内容-->
+<div class="container">
+    <!--服务项目-->
+    <div id="zt-fw-pro" class="ztFWPro"></div>
+    <!--项目案例-->
+    <div id="zt-pro-al" class="ztProAL"></div>
+    <!--新闻公告-->
+    <div id="zt-new-gg" class="ztNewGG"></div>
+    <!--联系我们-->
+    <div id="zt-wm-way" class="ztWmWay"></div>
+</div>
+<!--脚部-->
+<footer class="zt-footer">
+    <a id="bottom-logo" class="bottom-logo" href="#bottom-logo"><img src="img/bottomLogo.png" alt=""></a>
+    <p>版权所有：中腾环仪科技有限公司</p>
+    <a id="up-top" href="#zt-hp" class="up-top"><img src="img/upImg.png" alt=""></a>
+</footer>
 </body>
-<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PbG5AHVNk2uw9BtVZ5sUvpo2dKAtqeIh"></script>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
-<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
 </html>
