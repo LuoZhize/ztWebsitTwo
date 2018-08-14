@@ -14,10 +14,6 @@ li {
 }
 
 body {
-    transition-duration: 0.3s;
-    -moz-transition-duration: 0.3s;
-    -webkit-transition-duration: 0.3s;
-    -o-transition-duration: 0.3s;
     font-family: "微软雅黑";
 }
 
@@ -25,8 +21,107 @@ a:hover {
     text-decoration: none;
 }
 
+/*加载前的动画*/
+.load-befor-animate {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #77e9f6;
+    overflow: hidden;
+}
+
+.load-before {
+    text-align: center;
+    vertical-align: top;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/*Loader*/
+.loading {
+    background: #FFFFFF;
+    position: relative;
+    -webkit-animation: loading 1s ease-in-out infinite;
+    -moz-animation: loading 1s ease-in-out infinite;
+    -o-animation: loading 1s ease-in-out infinite;
+    animation: loading 1s ease-in-out infinite;
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    -o-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    width: 0.3rem;
+    height: 1.2rem;
+    border-radius: 10%;
+}
+
+.loading:after,
+.loading:before {
+    content: '';
+    position: absolute;
+    width: 0.3rem;
+    height: 1.2rem;
+    background: #FFFFFF;
+    -webkit-animation: inherit;
+    -moz-animation: inherit;
+    -o-animation: inherit;
+    animation: inherit;
+    border-radius: 10%;
+}
+
+.loading:before {
+    right: 1rem;
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.loading:after {
+    left: 1rem;
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    -o-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+@keyframes loading {
+    0%,
+    100% {
+        box-shadow: 0 0 0 #FFFFFF, 0 0 0 #FFFFFF;
+        -moz-box-shadow: 0 0 0 #FFFFFF, 0 0 0 #FFFFFF;
+        -webkit-box-shadow: 0 0 0 #FFFFFF, 0 0 0 #FFFFFF;
+    }
+    50% {
+        box-shadow: 0 -.75em 0 #FFFFFF, -0 .75em 0 #FFFFFF;
+        -moz-box-shadow: 0 -.75em 0 #FFFFFF, -0 .75em 0 #FFFFFF;
+        -webkit-box-shadow: 0 -.75em 0 #FFFFFF, -0 .75em 0 #FFFFFF;
+    }
+}
+
+@-ms-keyframes loading {
+    0%,
+    100% {
+        box-shadow: 0 0 0 #FFFFFF, 0 0 0 #FFFFFF;
+        -moz-box-shadow: 0 0 0 #FFFFFF, 0 0 0 #FFFFFF;
+        -webkit-box-shadow: 0 0 0 #FFFFFF, 0 0 0 #FFFFFF;
+    }
+    50% {
+        box-shadow: 0 -.75em 0 #FFFFFF, -0 .75em 0 #FFFFFF;
+        -moz-box-shadow: 0 -.75em 0 #FFFFFF, -0 .75em 0 #FFFFFF;
+        -webkit-box-shadow: 0 -.75em 0 #FFFFFF, -0 .75em 0 #FFFFFF;
+    }
+}
+
 /*首页*/
 .ztHp {
+    display: none;
     background: url("../img/ztHpBj.png") no-repeat;
     background-size: 100% 100%;
     position: relative;
@@ -251,6 +346,91 @@ a:hover {
     margin: 0 auto 1em;
     vertical-align: top;
     display: none;
+    overflow: hidden;
+}
+
+.loader {
+    text-indent: -9999em;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    background: #ffffff;
+    /*从左向右0~10%位置纯白，10%~50%纯白~透明*/
+    background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 50%);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 0.3rem rgba(255, 255, 255, .2);
+    -webkit-animation: load-effect 1.5s linear infinite;
+    animation: load-effect 1.5s linear infinite;
+    -moz-animation: load-effect 1.5s linear infinite;
+}
+
+/*绘制纯白1/4圆*/
+.loader::before {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 50%;
+    background: #FFF;
+    border-radius: 100% 0 0 0;
+    left: 0;
+    top: 0;
+}
+
+/*绘制背景内圆，挡住白色,颜色为背景色*/
+.loader::after {
+    background: #16233D;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: 0.3rem;
+    left: 0.3rem;
+}
+
+@keyframes load-effect {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes load-effect {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes load-effect {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes load-effect {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes load-effect {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .load-more {
@@ -415,6 +595,7 @@ a:hover {
 
 /*脚注*/
 .zt-footer {
+    display: none;
     margin: 2rem 11.83333rem;
     position: relative;
 }
