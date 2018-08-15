@@ -87,4 +87,4 @@ setTimeout(function () {
             $('body,html').animate({scrollTop: 0}, 500);
         });
     });
-}, 1000)
+}, 100)

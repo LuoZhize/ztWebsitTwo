@@ -471,6 +471,8 @@ a:hover {
     display: inline-block;
     margin-right: 0.733333rem;
     min-width: 12.866667rem;
+    min-height: 15.166667rem;
+    overflow: hidden;
 }
 
 .new-list-item:hover {
@@ -523,6 +525,12 @@ a:hover {
     color: #333333;
     margin-top: 1rem;
     margin-bottom: 0.66667rem;
+    max-width: 11.73333rem;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-spacing: initial;
+    overflow: hidden;
 }
 
 .new-item-time {
@@ -538,6 +546,12 @@ a:hover {
 .new-item-content {
     color: #AAAAAA;
     width: 11.366667rem;
+    min-height: 2.5rem;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-spacing: initial;
+    overflow: hidden;
 }
 
 .new-item-more {
