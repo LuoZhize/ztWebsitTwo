@@ -117,7 +117,7 @@ setTimeout(function () {
             y = -Math.sqrt(deg * p * x);
             if (incX == 1) {
                 y = -1 * y;
-                a += 0.5;
+                a += 0.4;
             }
             y += sevHeight / 1.7;
             if (y >= sevHeight / 1.28) {
@@ -138,4 +138,4 @@ setTimeout(function () {
 
         moveObj();
     });
-}, 10)
+}, 500)
