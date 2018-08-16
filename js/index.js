@@ -29,9 +29,9 @@ setTimeout(function () {
             $("#map").css('min-width', a + "px");
         }
 
-//初始化wow
-        new WOW().init();
-//项目案例
+
+        new WOW().init();//初始化wow
+        //项目案例
         var $container = $('.isotope').isotope({//初始化
             transitionDuration: '0.6s',
             itemSelector: '.element-item'
@@ -62,7 +62,7 @@ setTimeout(function () {
             return $item;
         }
 
-//联系我们
+        //联系我们
         var map = new BMap.Map("map");//百度地图
         var point = new BMap.Point(116.543865, 39.91278);//中心点经纬
         map.centerAndZoom(point, 15);//初始化地图①设置地图的中心点，②缩放范围3-19
@@ -86,5 +86,56 @@ setTimeout(function () {
         $('.up-top').click(function () {
             $('body,html').animate({scrollTop: 0}, 500);
         });
+        //首页动画
+        var sevWidth = $(window).width();
+        var sevHeight = $(window).height();
+        let p = 100, deg = 1.2, a = 1;
+        let myTimer = null;
+        let x = sevWidth / 1.5, y;
+        let incX = -1.00000002;
+
+        function moveObj() {//清除定时器
+            if (myTimer != null) {
+                window.clearInterval(myTimer);
+            }
+            myTimer = setInterval(goStep, 1);
+        }
+
+        let moveD = document.getElementById('moveD');
+
+        function goStep() {//moveLine
+            a += 0.05;
+            x = x + incX;
+            if (x < 0) {
+                incX = 1;
+                return;
+            } else if (x >= sevWidth / 1.5) {
+                window.clearInterval(myTimer);
+                myTimer = null;
+                return;
+            }
+            y = -Math.sqrt(deg * p * x);
+            if (incX == 1) {
+                y = -1 * y;
+                a += 0.5;
+            }
+            y += sevHeight / 1.7;
+            if (y >= sevHeight / 1.28) {
+                $('#moveD').animate({left: sevWidth / 2.6 + "px"}, 1500).fadeOut(1000);
+                $('.ztHp_animate').fadeIn(500).addClass('move-line-animate');
+                return y = sevHeight / 1.28;
+            }
+            moveD.style.top = y + "px";
+            moveD.style.left = x + "px";
+            moveD.style.transform = "rotateY(" + a + "deg)";
+            //描绘
+            // let divObj = document.createElement("div");
+            // let cssStr = "position:absolute;width:10px;height:10px;background-color:red;";
+            // cssStr += "left:" + x + "px;top:" + y + "px;";
+            // divObj.style.cssText = cssStr;
+            // document.body.appendChild(divObj);
+        }
+
+        moveObj();
     });
-}, 100)
+}, 10)
