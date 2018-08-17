@@ -135,6 +135,17 @@ a:hover {
     border-radius: 0.133rem 0 0 0.133rem;
     background: url("../img/moveLine.png") no-repeat;
     background-size: 100% 100%;
+    -webkit-animation: moveUfoAnimate 10s linear;
+    -moz-animation: moveUfoAnimate 10s linear;
+    animation: moveUfoAnimate 10s linear;
+}
+
+@keyframes moveUfoAnimate {
+    0% {transform: rotateZ(0deg)rotateX(45deg)}
+    50% {transform: rotateZ(-15deg)rotateX(45deg)}
+    55% {transform: rotateY(100deg)rotateX(45deg)}
+    65% {transform: rotateY(165deg)rotateX(45deg)}
+    100% {transform: rotateY(165deg)rotateX(45deg)}
 }
 
 .move-line-animate {
@@ -144,8 +155,8 @@ a:hover {
     transition-duration: 0.2s;
 }
 @keyframes moveLineAnimate {
-    0% {transform: translateX(-6.5rem)scale(0.3)}
-    50% {transform: translateX(-3rem)scale(0.3)}
+    0% {transform: translateX(-6.5rem)scale(0.01)}
+    50% {transform: translateX(-3rem)scale(0.01)}
     100% {transform: translateX(0rem)scale(1)}
 }
 
@@ -196,7 +207,7 @@ a:hover {
     font-size: 0.733334rem;
     color: #ffffff;
     position: absolute;
-    bottom: 4.5rem;
+    bottom: 5rem;
     left: 10.33334rem;
     overflow: hidden;
     display: none;
