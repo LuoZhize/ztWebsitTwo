@@ -96,6 +96,7 @@ setTimeout(function () {
             y,//top
             incX = -1;//方向
         let moveD = document.getElementById('moveD');
+        let flyTail = document.getElementById('fly-tail');
 
         function moveObj() {//清除定时器
             if (myTimer != null) {
@@ -141,13 +142,16 @@ setTimeout(function () {
             } else {
                 moveD.style.top = y + "px";
                 moveD.style.left = x + "px";
+                flyMove(x,y);
             }
-            //描绘
-            // let divObj = document.createElement("div");
-            // let cssStr = "position:absolute;width:10px;height:10px;background-color:red;";
-            // cssStr += "left:" + x + "px;top:" + y + "px;";
-            // divObj.style.cssText = cssStr;
-            // document.body.appendChild(divObj);
+        }
+        //描绘
+        function flyMove (a,b) {
+            let divObj = document.createElement("div");
+            let cssStr = "position:absolute;width:10px;height:10px;background-color:red;";
+            cssStr += "left:" + a + "px;top:" + b + "px;";
+            divObj.style.cssText = cssStr;
+            flyTail.appendChild(divObj);
         }
 
         moveObj();

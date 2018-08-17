@@ -140,6 +140,10 @@ a:hover {
     animation: moveUfoAnimate 10s linear;
 }
 
+#fly-tail {
+    position: relative;
+}
+
 @keyframes moveUfoAnimate {
     0% {transform: rotateZ(0deg)rotateX(45deg)}
     50% {transform: rotateZ(-15deg)rotateX(45deg)}
