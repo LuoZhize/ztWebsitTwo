@@ -1,5 +1,6 @@
 setTimeout(function () {
     $(document).ready(function () {
+        $('body').append('<audio src="../ztWebsitTwo/img/xiu.wav" autoplay=autoplay></audio>');//音效
         $('.container').show();//在dom树加载完成后在加载
         $('.ztHp').show();
         $('.zt-footer').show();
@@ -29,7 +30,6 @@ setTimeout(function () {
             $('.ztHp').css('min-height', a + "px");
             $("#map").css('min-width', a + "px");
         }
-
 
         new WOW().init();//初始化wow
         //项目案例
@@ -88,15 +88,17 @@ setTimeout(function () {
             $('body,html').animate({scrollTop: 0}, 500);
         });
         //首页动画
-        let animateNum = 0,
+        let hpText = "iphone X 拥有一块超高分辨率",
+            timerr,
             p = 100,//焦点
-            deg = 1.2,//角度
+            deg = 3,//角度
             myTimer = null,//时间
             x = sevWidth / 1.5,//left
             y,//top
-            incX = -1;//方向
-        let moveD = document.getElementById('moveD');
-        let flyTail = document.getElementById('fly-tail');
+            incX = -2.5;//方向
+        let moveD = document.getElementById('moveD'),
+            flyTail = document.getElementById('fly-tail'),
+            zyHpText = document.getElementById('zt-hp-text');
 
         function moveObj() {//清除定时器
             if (myTimer != null) {
@@ -118,35 +120,58 @@ setTimeout(function () {
             y = -Math.sqrt(deg * p * x);
             if (incX == 1) {
                 y = -1 * y;
+                $('#moveD').css({'background': 'url("img/moveStop.png") no-repeat 100% 100%', backgroundSize: '100%'});
+                window.clearInterval(myTimer);
+                myTimer = null;
+                return;
             }
-            y += winHeight / 1.7;
-            if (y >= winHeight / 1.28) {
-                $('#moveD').animate({left: sevWidth / 2.6 + "px"}, 1500).fadeOut(1000);//横走
-                $('.ztHp_animate').fadeIn(500).addClass('move-line-animate');//添加class动画
-                return y = winHeight / 1.28;//固定y高度
-            }
-            if (x <= sevWidth / 20) {//转弯动画
-                animateNum++;
-                if (animateNum <= 1) {
-                    for (let times2 = 0; times2 < 32; times2++) {
-                        let a2 = sevWidth / 20.002, b2 = winHeight / 1.605, r2 = 135;//第二个a,b圆心;r半径
-                        let huDu2 = 15 * (Math.PI / 360) * times2;//度数
-                        let X2 = a2 - Math.sin(huDu2) * r2;
-                        let Y2 = b2 - Math.cos(huDu2) * r2;
-                        $('#moveD').animate({left: X2 + 'px', top: Y2 + 'px'}, 50, 'linear', function () {
+            y += winHeight / 1.2;
+            let i = 0;//首页动画字体的长度
+            if (y >= winHeight / 1.33) {
 
-                        });
+                setTimeout(function () {
+                    $('#moveD').animate({left: sevWidth / 2.6 + "px"}, 1500).fadeOut(500);//横走
+                    $('.ztHp_animate').fadeIn(50);//显示
+                    if (i == 0) {
+                        setTimeout(function () {//延迟500毫秒让字体打出来
+                            timerr = setInterval(function () {
+                                zyHpText.innerHTML = hpText.substring(0, i);
+                                i++;
+                                if (zyHpText.innerHTML == hpText) {
+                                    clearInterval(timerr);
+                                }
+                            }, 40);
+                        }, 500)
                     }
-                } else {
-                }
-            } else {
-                moveD.style.top = y + "px";
-                moveD.style.left = x + "px";
-                flyMove(x,y);
+                }, 1000)
+                return y = winHeight / 1.33;//固定y高度
             }
+            moveD.style.top = y + "px";
+            moveD.style.left = x + "px";
+            if (x <= sevWidth / 20) {//改变图片
+            } else {
+            }
+            // if (x <= sevWidth / 20) {//转弯动画
+            // animateNum++;
+            // if (animateNum <= 1) {
+            // for (let times2 = 0; times2 < 31; times2++) {
+            // let a2 = sevWidth / 20.002, b2 = winHeight / 1.605, r2 = 135;//第二个a,b圆心;r半径
+            // let huDu2 = 15 * (Math.PI / 360) * times2;//度数
+            // let X2 = a2 - Math.sin(huDu2) * r2;
+            // let Y2 = b2 - Math.cos(huDu2) * r2;
+            // $('#moveD').animate({left: X2 + 'px', top: Y2 + 'px'}, 50, 'linear', function () {
+            // });
+            // }
+            // } else {
+            // }
+            // } else {
+            // moveD.style.top = y + "px";
+            // moveD.style.left = x + "px";
+            // }
         }
+
         //描绘
-        function flyMove (a,b) {
+        function flyMove(a, b) {
             let divObj = document.createElement("div");
             let cssStr = "position:absolute;width:10px;height:10px;background-color:red;";
             cssStr += "left:" + a + "px;top:" + b + "px;";
